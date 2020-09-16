@@ -91,6 +91,20 @@ function colorbox_admin_settings() {
     '#markup' => '<div class="colorbox-custom-settings' . $js_hide . '">',
   );
 
+  // Cancel and Save action buttons
+  $form['colorbox_custom_settings']['colorbox_actions_cancel'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Cancel Button'),
+    '#default_value' => variable_get('colorbox_actions_cancel', 1),
+    '#description' => t('The cancel button on the bottom of colorbox modal.'),
+  );
+  $form['colorbox_custom_settings']['colorbox_actions_save'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Save Button'),
+    '#default_value' => variable_get('colorbox_actions_save', 1),
+    '#description' => t('The save button on the bottom of colorbox modal.'),
+  );
+
   $form['colorbox_custom_settings']['colorbox_transition_type'] = array(
     '#type' => 'radios',
     '#title' => t('Transition type'),
