@@ -79,7 +79,7 @@ function colorbox_libraries_info() {
     'name' => 'Colorbox plugin',
     'vendor url' => 'http://www.jacklmoore.com/colorbox',
     // 'download url' => 'https://github.com/jackmoore/colorbox/archive/1.x.zip',
-    'download url' => 'https://github.com/qidian99/colorbox/archive/v2.0.2.zip',
+    'download url' => 'https://github.com/qidian99/colorbox/archive/v2.0.7.zip',
     'version arguments' => array(
       'file' => 'jquery.colorbox-min.js',
       'pattern' => '@(?i:Colorbox)\sv?([0-9\.a-z]+)@',
@@ -194,9 +194,11 @@ function _colorbox_doheader() {
       'mobiledetect' => variable_get('colorbox_mobile_detect', 1) ? TRUE : FALSE,
       'mobiledevicewidth' => variable_get('colorbox_mobile_device_width', '480px'),
 
-      'cancelButton' => variable_get('colorbox_actions_cancel', TRUE),
-      'saveButton' => variable_get('colorbox_actions_save', TRUE),
+      'cancelButton' => variable_get('colorbox_actions_cancel', FALSE),
+      'saveButton' => variable_get('colorbox_actions_save', FALSE),
     );
+
+    // dpm(variable_get('colorbox_actions_cancel', FALSE));
   }
   else {
     $js_settings = array(

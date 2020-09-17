@@ -3,6 +3,6 @@ api = 2
 
 libraries[colorbox][type] = "libraries"
 libraries[colorbox][download][type] = "file"
-libraries[colorbox][download][url] = "https://github.com/qidian99/colorbox/archive/v2.0.2.zip"
+libraries[colorbox][download][url] = "https://github.com/qidian99/colorbox/archive/v2.0.7.zip"
 libraries[colorbox][directory_name] = "colorbox"
 libraries[colorbox][destination] = "libraries"
